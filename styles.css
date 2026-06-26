@@ -1,0 +1,145 @@
+/* Olayemi Yesiroh - Portfolio Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header and Title Styles */
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 10px;
+}
+
+/* Tagline Styles */
+body > p:first-of-type {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Quote Styles */
+p:last-of-type {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(231, 76, 60, 0.1);
+  border-left: 5px solid #e74c3c;
+  border-radius: 5px;
+}
+
+/* Container for content */
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ecf0f1;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  transform: translateX(10px);
+  color: #e74c3c;
+}
+
+li::before {
+  content: "📖 ";
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    padding: 15px;
+  }
+
+  ul {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  body > p:first-of-type {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1, h2, ul, p {
+  animation: fadeIn 0.8s ease-in-out;
+}
